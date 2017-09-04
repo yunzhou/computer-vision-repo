@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://cs231n.stanford.edu/syllabus.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syllabus | CS 231N</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./Syllabus _ CS 231N_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./Syllabus _ CS 231N_files/bootstrap-theme.min.css">
+
+  <!-- Google fonts -->
+  <link href="./Syllabus _ CS 231N_files/css" rel="stylesheet" type="text/css">
+
+  <!-- Google Analytics -->
+  <script async="" src="./Syllabus _ CS 231N_files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46895817-2', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="./Syllabus _ CS 231N_files/style.css">
+</head>
+
+<body>
+
+<div id="header">
+  <a href="http://vision.stanford.edu/">
+    <img src="./Syllabus _ CS 231N_files/visionlablogo.png" style="height:50px; float: left; margin-left: 20px;">
+  </a>
+  <a href="http://stanford.edu/">
+    <img src="./Syllabus _ CS 231N_files/stanfordlogo.jpg" style="height:50px; float: right; margin-right: 20px;">
+  </a>
+
+  <a href="http://cs231n.stanford.edu/index.html">
+    <h1>CS231n: Convolutional Neural Networks for Visual Recognition</h1>
+  </a>
+
+  <div style="clear:both;"></div>
+</div>
+
+
+<div class="sechighlight">
+<div class="container sec">
+
+  <h2>Schedule and Syllabus</h2>
+
+  <br>
+  Unless otherwise specified the course lectures and meeting times are Tuesday and Thursday 12pm to 1:20pm in the NVIDIA Auditorium
+  in the Huang Engineering Center.
+  (<a href="https://campus-map.stanford.edu/?id=04-080&amp;lat=37.42787956&amp;lng=-122.17429865&amp;zoom=17&amp;srch=nvidia%20auditorium">map</a>)
+
+<br><br>
+This is the syllabus for the <b>Spring 2017</b> iteration of the course.
+The syllabus for the <a href="http://cs231n.stanford.edu/2016/syllabus">Winter 2016</a>
+and <a href="http://cs231n.stanford.edu/2015/syllabus">Winter 2015</a> iterations of this course
+are still available.
+
+</div>
+</div>
+
+<div class="container sec">
+<table class="table">
+  <tbody><tr class="active">
+    <th>Event Type</th><th>Date</th><th>Description</th><th>Course Materials</th>
+  </tr>
+  <tr>
+    <td>Lecture 1</td>
+    <td>Tuesday <br> April 4</td>
+    <td>
+      <b>Course Introduction</b> <br>
+      Computer vision overview <br>
+      Historical context <br>
+      Course logistics
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture1.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=vT1JzLTH4G4&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 2</td>
+    <td>Thursday <br> April 6</td>
+    <td>
+      <b>Image Classification</b> <br>
+      The data-driven approach <br>
+      K-nearest neighbor <br>
+      Linear classification I
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture2.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=OoUX-nOEjG0&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+      <a href="http://cs231n.github.io/python-numpy-tutorial">[python/numpy tutorial]</a><br>
+      <a href="http://cs231n.github.io/classification">[image classification notes]</a><br>
+      <a href="http://cs231n.github.io/linear-classify">[linear classification notes]</a><br>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 3</td>
+    <td>Tuesday <br> April 11</td>
+    <td>
+      <b>Loss Functions and Optimization</b> <br>
+      Linear classification II<br>
+      Higher-level representations, image features<br>
+      Optimization, stochastic gradient descent</td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture3.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=h7iBpEHGVNc&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+      <a href="http://cs231n.github.io/linear-classify">[linear classification notes]</a><br>
+      <a href="http://cs231n.github.io/optimization-1">[optimization notes]</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 4</td>
+    <td>Thursday <br> April 13</td>
+    <td>
+      <b>Introduction to Neural Networks</b> <br>
+      Backpropagation<br>
+      Multi-layer Perceptrons<br>
+      The neural viewpoint
+    </td><td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture4.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=d14TUNcbn1k&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+      <a href="http://cs231n.github.io/optimization-2">[backprop notes]</a><br>
+      <a href="http://cs231n.stanford.edu/handouts/linear-backprop.pdf">[linear backprop example]</a><br>
+      <a href="http://cs231n.stanford.edu/handouts/derivatives.pdf">[derivatives notes]</a> (optional) <br>
+      <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[Efficient BackProp]</a> (optional)<br>
+      related: <a href="http://colah.github.io/posts/2015-08-Backprop/">[1]</a>, <a href="http://neuralnetworksanddeeplearning.com/chap2.html">[2]</a>, <a href="https://www.youtube.com/watch?v=q0pm3BrIUFo">[3]</a> (optional)
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 5</td>
+    <td>Tuesday <br> April 18</td>
+    <td>
+      <b>Convolutional Neural Networks</b> <br>
+      History <br>
+      Convolution and pooling <br>
+      ConvNets outside vision
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture5.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=bNb2fEVKeEo&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+      <a href="http://cs231n.github.io/convolutional-networks/">ConvNet notes</a><br>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 6</td>
+    <td>Thursday <br> April 20</td>
+    <td>
+      <b>Training Neural Networks, part I</b> <br>
+      Activation functions, initialization, dropout, batch normalization
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture6.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=wEoyxE0GP2M&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+      <a href="http://cs231n.github.io/neural-networks-1/">Neural Nets notes 1</a><br>
+      <a href="http://cs231n.github.io/neural-networks-2/">Neural Nets notes 2</a><br>
+      <a href="http://cs231n.github.io/neural-networks-3/">Neural Nets notes 3</a><br>
+      tips/tricks: 
+      <a href="http://research.microsoft.com/pubs/192769/tricks-2012.pdf">[1]</a>, 
+      <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[2]</a>, 
+      <a href="http://arxiv.org/pdf/1206.5533v2.pdf">[3]</a> (optional)
+      <br>
+      <a href="http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html">Deep Learning [Nature]</a> (optional)
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A1 Due</td>
+    <td>Thursday <br> April 20</td>
+    <td>
+      <b>Assignment #1 due</b> <br>
+      kNN, SVM, SoftMax, two-layer network
+    </td>
+    <td>
+      <a href="http://cs231n.github.io/assignments2017/assignment1/">[Assignment #1]</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 7</td>
+    <td>Tuesday <br> April 25</td>
+    <td>
+      <b>Training Neural Networks, part II</b> <br>
+      Update rules, ensembles, data augmentation, transfer learning
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture7.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=_JB0AO7QxSA&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+      <a href="http://cs231n.github.io/neural-networks-3/">Neural Nets notes 3</a><br>
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>Proposal due</td>
+    <td>Tuesday <br> April 25</td>
+    <td>Couse Project Proposal due</td>
+    <td><a href="http://cs231n.stanford.edu/project.html">[proposal description]</a></td>
+  </tr>
+  <tr>
+    <td>Lecture 8</td>
+    <td>Thursday <br> April 27</td>
+    <td>
+      <b>Deep Learning Software</b> <br>
+      Caffe, Torch, Theano, TensorFlow, Keras, PyTorch, etc
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture8.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=6SlgtELqOWc&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 9</td>
+    <td>Tuesday <br> May 2</td>
+    <td>
+      <b>CNN Architectures</b> <br>
+      AlexNet, VGG, GoogLeNet, ResNet, etc
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture9.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=DAOcjicFr1Y&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+      <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">AlexNet</a>, <a href="https://arxiv.org/abs/1409.1556">VGGNet</a>, <a href="https://arxiv.org/abs/1409.4842">GoogLeNet</a>, <a href="https://arxiv.org/abs/1512.03385">ResNet</a>
+    </td>
+  </tr>
+  <tr>  
+    <td>Lecture 10</td>
+    <td>Thursday <br> May 4</td>
+    <td>
+      <b>Recurrent Neural Networks</b> <br>
+      RNN, LSTM, GRU <br>
+      Language modeling <br>
+      Image captioning, visual question answering <br>
+      Soft attention
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture10.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=6niqTuYFZLQ&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+      <a href="http://www.deeplearningbook.org/contents/rnn.html">DL book RNN chapter</a> (optional)<br>
+      <a href="https://gist.github.com/karpathy/d4dee566867f8291f086">min-char-rnn</a>, <a href="https://github.com/karpathy/char-rnn">char-rnn</a>, <a href="https://github.com/karpathy/neuraltalk2">neuraltalk2</a>
+
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A2 Due</td>
+    <td>Thursday <br> May 4</td>
+    <td>
+      <b>Assignment #2 due</b> <br>
+      Neural networks, ConvNets
+    </td>
+    <td><a href="http://cs231n.github.io/assignments2017/assignment2/">[Assignment #2]</a></td>
+  </tr>
+  <tr class="danger">
+    <td>Midterm</td>
+    <td>Tuesday <br> May 9</td>
+    <td><b>In-class midterm</b><br>Location: <a href="https://piazza.com/class/j0vi72697xc49k?cid=1272">Various</a> (<b>not</b> our usual classroom)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Lecture 11</td>
+    <td>Thursday <br> May 11</td>
+    <td>
+      <b>Detection and Segmentation</b> <br>
+      Semantic segmentation <br>
+      Object detection <br>
+      Instance segmentation
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture11.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=nDPWywWRIRo&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 12</td>
+    <td>Tuesday <br> May 16</td>
+    <td>
+      <b>Visualizing and Understanding</b> <br>
+      Feature visualization and inversion <br>
+      Adversarial examples <br>
+      DeepDream and style transfer
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture12.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=6wcs6szJWMY&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+      <a href="https://github.com/google/deepdream">DeepDream</a><br>
+      <a href="https://github.com/jcjohnson/neural-style">neural-style</a><br>
+      <a href="https://github.com/jcjohnson/fast-neural-style">fast-neural-style</a><br>
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>Milestone</td>
+    <td>Tuesday <br> May 16</td>
+    <td>Course Project Milestone due</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Lecture 13</td>
+    <td>Thursday <br> May 18</td>
+    <td>
+      <b>Generative Models</b> <br>
+      PixelRNN/CNN <br>
+      Variational Autoencoders <br>
+      Generative Adversarial Networks
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture13.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=5WoItGTWV54&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 14</td>
+    <td>Tuesday <br> May 23</td>
+    <td>
+      <b>Deep Reinforcement Learning</b> <br>
+      Policy gradients, hard attention <br>
+      Q-Learning, Actor-Critic
+   </td>
+   <td>
+     <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture14.pdf">[slides]</a>
+     <a href="https://www.youtube.com/watch?v=lvoHnicueoE&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+     <br>
+    </td>
+  </tr>
+  <tr>
+    <td>Guest Lecture</td>
+    <td>Thursday <br> May 25</td>
+    <td>
+      <b>Invited Talk: <a href="https://stanford.edu/~songhan/">Song Han</a></b>
+      <br>
+      Efficient Methods and Hardware for Deep Learning
+    </td><td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture15.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=eZdOkDtYMoo&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A3 Due</td>
+    <td>Friday <br> May 26</td>
+    <td>
+      <b>Assignment #3 due</b>
+    </td>
+    <td><a href="http://cs231n.github.io/assignments2017/assignment3/">[Assignment #3]</a></td>
+  </tr>
+  <tr class="info">
+    <td>Guest Lecture</td>
+    <td>Tuesday <br> May 30</td>
+    <td>
+      <b>Invited Talk: <a href="http://www.iangoodfellow.com/">Ian Goodfellow</a></b>
+      <br>
+      Adversarial Examples and Adversarial Training
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture16.pdf">[slides]</a>
+      <a href="https://www.youtube.com/watch?v=CIfsB_EYsVI&amp;list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv">[video]</a>
+      <br>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 16</td>
+    <td>Thursday <br> June 1</td>
+    <td>Student spotlight talks, conclusions</td>
+    <td>
+      [slides]
+    </td>
+  </tr>
+    <tr class="warning">
+    <td>Poster Due</td>
+    <td>Monday <br> June 5</td>
+    <td>
+      <b>Poster PDF due</b>
+    </td>
+    <td><a href="http://cs231n.stanford.edu/project.html">[poster description]</a></td>
+  </tr>
+  <tr class="danger">
+    <td>Poster Presentation</td>
+    <td>Tuesday<br> June 6</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="warning">
+    <td>Final Project Due</td>
+    <td><b>Monday <br> June 12</b></td>
+    <td>Final course project due date</td>
+    <td>
+      <a href="http://cs231n.stanford.edu/reports.html">[reports]</a>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+
+<!-- jQuery and Boostrap -->
+<script src="./Syllabus _ CS 231N_files/jquery.min.js"></script>
+<script src="./Syllabus _ CS 231N_files/bootstrap.min.js"></script>
+
+
+
+</body></html>
