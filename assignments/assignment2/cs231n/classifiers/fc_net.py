@@ -83,7 +83,7 @@ class TwoLayerNet(object):
         # TODO: Implement the forward pass for the two-layer net, computing the    #
         # class scores for X and storing them in the scores variable.              #
         ############################################################################
-        pass
+        #pass
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################
@@ -176,7 +176,15 @@ class FullyConnectedNet(object):
         # beta2, etc. Scale parameters should be initialized to one and shift      #
         # parameters should be initialized to zero.                                #
         ############################################################################
-        pass
+
+        for l,hd in enumerate(hidden_dims):
+            if l==0:
+                self.params['W'+str(l+1)] = np.random.normal(0, weight_scale, (input_dim, hd))
+            else:
+                self.params['W' + str(l + 1)] = np.random.normal(0, weight_scale, (hidden_dims[l-1], hd))
+            self.params['b' + str(l + 1)] = np.zeros(hd)
+        self.params['W' + str(self.num_layers)] = np.random.normal(0, weight_scale, (hidden_dims[-1], num_classes))
+        self.params['b' + str(self.num_layers)] = np.zeros(num_classes)
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################
@@ -202,7 +210,6 @@ class FullyConnectedNet(object):
         # Cast all parameters to the correct datatype
         for k, v in self.params.items():
             self.params[k] = v.astype(dtype)
-
 
     def loss(self, X, y=None):
         """
@@ -234,7 +241,14 @@ class FullyConnectedNet(object):
         # self.bn_params[1] to the forward pass for the second batch normalization #
         # layer, etc.                                                              #
         ############################################################################
-        pass
+        layer_scores=[]
+        layer_caches=[]
+        li=X
+        for l in range(self.num_layers-1):
+            li, cachei = affine_relu_forward(li,self.params['W'+str(l+1)],self.params['b'+str(l+1)])
+            layer_scores.append(li)
+            layer_caches.append(cachei)
+        scores, last_cache = affine_forward(layer_scores[-1],self.params['W'+str(self.num_layers)],self.params['b'+str(self.num_layers)])
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################
@@ -257,7 +271,18 @@ class FullyConnectedNet(object):
         # automated tests, make sure that your L2 regularization includes a factor #
         # of 0.5 to simplify the expression for the gradient.                      #
         ############################################################################
-        pass
+        loss, dout = softmax_loss(scores,y)
+        reg_loss = 0
+        for l in range(self.num_layers):
+            reg_loss+=np.sum(self.params['W'+str(l+1)].reshape(-1)**2)
+        loss += 0.5*self.reg*reg_loss
+        dxi, dWlast, dblast = affine_backward(dout, last_cache)
+        grads['W'+str(self.num_layers)] = dWlast+self.reg*self.params['W'+str(self.num_layers)]
+        grads['b'+str(self.num_layers)] = dblast
+        for l in reversed(range(self.num_layers-1)):
+            dxi, dWi, dbi = affine_relu_backward(dxi, layer_caches[l])
+            grads['W'+str(l+1)] = dWi+self.reg*self.params['W'+str(l+1)]
+            grads['b'+str(l+1)] = dbi
         ############################################################################
         #                             END OF YOUR CODE                             #
         ############################################################################
